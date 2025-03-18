@@ -4,8 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documentation</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    
+    <div class="navbar">
+    <nav>
+        <div class="nom">
+        <h2><a href="index.html">Saossane TARASSE </a></h2>
+        </div>
+        <ul>
+            <li> <a href="index.html"> Accueil </a></li>
+            <li class="accordion">Documentation</li>
+            <ul class="submenu">
+                <li><a href="page2_projet_entrep.html">Projet entreprise </a></li>
+                <li>Projet école</li>
+            </ul>
+            <li>Veille technologique</li>
+        </ul>
+    </nav>
+
+    <script>
+        document.querySelector(".accordion").addEventListener("click", function() {
+            let submenu = document.querySelector(".submenu");
+            submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+        });
+    </script>
+</div>
+
+<div> <br><br>
+
+<center>
+    <h1>Stage 1er année</h1>
+    <h2> Azuvia - Morières-lès-Avignon</h2>
+    <h3>Mission principale: Administration Azure</h3>
+
+    <br><br>
+    <a href="./docs/Rapport_de_stage_annee1.pdf" target="_blank"> <button> Stage 1er année </button> </a>
+
+
+    <br><br><br><br><br><br>
+
+    <h1>Stage 2ème année</h1>
+    <h2> Unimage - Nîmes (distanciel)</h2>
+    <h3>Mission principale: Administration Azure</h3>
+</center>
+</div>
 </body>
 </html>
