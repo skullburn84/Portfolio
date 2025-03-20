@@ -14,6 +14,7 @@ h1{
     font-size: 50px;
 }
 
+
 .nom{
     display: flex;
     color: antiquewhite;
@@ -55,4 +56,145 @@ li:hover {
 .submenu li {
     background-color: #444;
     display: block;
+}
+
+
+
+/* Styles pour la section skills */
+#skills {
+    background: linear-gradient(to top, #bdcdd0, #ffffff);
+    min-height: 300px;  /* Ajout d'une hauteur minimale pour que le fond soit visible */
+    padding: 30px 0;  /* Ajout de padding pour donner de l'espace au contenu */
+}
+
+/* Styles pour les titres */
+.section-title h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Texte justifié avec alinéa */
+p {
+    text-align: justify;
+}
+
+/* Style personnalisé pour l'alinéa */
+.alinea-text {
+    font-weight: bold;
+}
+
+/* Style pour les titres des compétences */
+h3 {
+    color: #173b6c;
+}
+
+/* Style pour la liste de filtres */
+#portfolio-flters-1 {
+    background: linear-gradient(to top, #040b14, #3a3a3b);
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+#portfolio-flters-1 li {
+    cursor: pointer;
+    padding: 8px 15px;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#portfolio-flters-1 li:hover,
+#portfolio-flters-1 .filter-active {
+    background-color: #173b6c;
+    border-radius: 5px;
+}
+
+/* Style pour les éléments du portfolio */
+.portfolio-item {
+    margin-bottom: 30px;
+}
+
+/* Style pour les images des certifications */
+.portfolio-wrap {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.portfolio-wrap img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-wrap:hover img {
+    transform: scale(1.1);
+}
+
+/* Style pour les liens d'actions */
+.portfolio-links {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+}
+
+.portfolio-links a:hover {
+    background-color: #173b6c;
+}
+
+/* Style pour la section portfolio */
+.portfolio {
+    border-radius: 15px;
+    background-image: url('portfolio/img/background/background.png');
+    padding: 30px 0;
+}
+
+/* Style pour la section des témoignages/langages */
+.testimonials {
+    height: 500px;
+}
+
+/* Style pour la mise en page générale */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-lg-4,
+.col-md-6 {
+    flex: 1 1 30%;
+    max-width: 30%;
+    padding: 10px;
+}
+
+.col-lg-8 {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .col-lg-4,
+    .col-md-6 {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
 }
