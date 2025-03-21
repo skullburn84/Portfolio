@@ -8,10 +8,30 @@ nav {
     
 }
 
+.stage1{
+    display: center;
+    font-family: 'Sour Gummy', sans-serif;
+}
+
+.stage2{
+    display: center;
+    font-family: 'Sour Gummy', sans-serif;
+}
+
+
+.en-tete{
+    display: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+
 h1{
     color: red;
-    font-family: 'Sour Gummy', sans-serif;
     font-size: 50px;
+}
+
+a {
+    text-decoration: none;
 }
 
 
