@@ -1,3 +1,7 @@
+body{
+    background-color:#d3dae9;
+}
+
 nav {
     background-color: #333;
     width: 100%;
@@ -5,12 +9,16 @@ nav {
     display: flex;
     justify-content: center;
     font-size: 20px;
-    
+    border-style: inset ;
+    border-color: #a49f9fed;
+    border-radius: 10px;
+    /* box-shadow: 8px 8px 20px 0 rgba(0,0,0,0.5) */
 }
 
 .stage1{
     display: center;
     font-family: 'Sour Gummy', sans-serif;
+    background-image: url("unimage.jpg");
 }
 
 .stage2{
@@ -21,18 +29,35 @@ nav {
 
 .en-tete{
     display: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
+    font-family: 'Darumadrop One';
+}
+
+.space{
+    border-bottom: 3px solid #a37171;
+
 }
 
 h1{
     color: red;
     font-size: 50px;
+    /* letter-spacing: 2px; */
+}
+
+p {
+    text-align: justify;
+    font-size: 20px;
+    position: sticky;
+    
 }
 
 a {
+    color: white;
     text-decoration: none;
-}
+  }
+
+a:hover {
+    color: rgb(187, 185, 185);
+  }
 
 
 .nom{
@@ -62,7 +87,7 @@ li {
 }
 
 li:hover {
-    background-color: #555;
+    background-color: #97addb;
 }
 
 /* Sous-menu */
@@ -80,9 +105,9 @@ li:hover {
 
 
 
-/* Styles pour la section skills */
+/* document pdf */
 #skills {
-    background: linear-gradient(to top, #bdcdd0, #ffffff);
+    /* background: linear-gradient(to top, #bdcdd0, #ffffff); */
     min-height: 300px;  /* Ajout d'une hauteur minimale pour que le fond soit visible */
     padding: 30px 0;  /* Ajout de padding pour donner de l'espace au contenu */
 }
@@ -93,20 +118,20 @@ li:hover {
     font-weight: bold;
 }
 
-/* Texte justifié avec alinéa */
-p {
-    text-align: justify;
+
+.pdf{
+    text-align: right;
 }
 
-/* Style personnalisé pour l'alinéa */
+/* Style personnalisé pour l'alinéa
 .alinea-text {
     font-weight: bold;
-}
+} */
 
-/* Style pour les titres des compétences */
+/* Style pour les titres des compétences
 h3 {
     color: #173b6c;
-}
+} */
 
 /* Style pour la liste de filtres */
 #portfolio-flters-1 {
@@ -186,16 +211,16 @@ h3 {
     padding: 30px 0;
 }
 
-/* Style pour la section des témoignages/langages */
+/* Style pour la section des témoignages/langages
 .testimonials {
     height: 500px;
 }
 
 /* Style pour la mise en page générale */
-.row {
+/* .row {
     display: flex;
     flex-wrap: wrap;
-}
+} */
 
 .col-lg-4,
 .col-md-6 {

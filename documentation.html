@@ -7,7 +7,32 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>Documentation</h1>
+
+    <div class="navbar">
+        <nav>
+            <div class="nom">
+            <h2>Saossane TARASSE</h2>
+            </div>
+            <ul>
+                <li> <a href="index.html"> Accueil </a></li>
+                <li class="accordion"> Documentation</li>
+                <ul class="submenu">
+                    <li><a href="page2_projet_entrep.html">Projet entreprise </a></li>
+                    <li><a href= page2_projet_ecole.html> Projet école</a></li>
+                </ul>
+                <li>Veille technologique</li>
+            </ul>
+        </nav>
     
+        <script>
+            document.querySelector(".accordion").addEventListener("click", function() {
+                let submenu = document.querySelector(".submenu");
+                submenu.style.display = submenu.style.display === "block" ? "none" : "block";
+            });
+        </script>
+    </div>
+    <div class="en-tete">
+    <h1>Documentation</h1>
+</div>
 </body>
 </html>
