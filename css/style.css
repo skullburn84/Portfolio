@@ -30,6 +30,7 @@ footer{
     text-align: center;
     font-family: 'Sour Gummy';
     font-size: 50px;
+    color: red;
     
 }
 
@@ -74,6 +75,7 @@ hr {
 a {
     color: black;
     text-decoration: none;
+    position: relative;
   }
 
 a:hover{
@@ -121,7 +123,7 @@ a:hover{
 }
 
 li:hover{
-    color: rgb(195, 73, 28);
+    color: rgb(28, 67, 195);
 
 }
 
@@ -211,11 +213,40 @@ li:hover{
 
 .nav_text:hover {
     color: rgb(187, 185, 185);
-  }
+}
+
+li:hover{
+    color: rgb(195, 73, 28);
+}
+
+.dropdown .nav_text{
+    position: relative;
+}   
+
+.dropdown ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #c15036;
+    padding: 1em;
+    margin-right: 35px;
+    width: 100%;
+    color: white;
+    border-radius: 15px;
+
+    display: none;
+}
+
+.dropdown:hover ul{
+    display: block;
+}
 
 
 button{
-
+    border-radius: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 25px;
 }
 
 /* .space{
