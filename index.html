@@ -1,135 +1,275 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Saossane Tarasse</title>
+    <link rel="stylesheet" href="./css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy&display=swap" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Darumadrop One' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Tienne' rel='stylesheet'>
-
+    <link href="https://fonts.googleapis.com/css?family=Darumadrop+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Tienne" rel="stylesheet">
 </head>
 <body>
-    <div class="navbar">
-        <div class="name"><a href="index.html">Saossane TARASSE</a></div>
-        <div class="nav_text">Accueil</div>
-        <div class="dropdown">
-            <div class="nav_text">
-                <a href="documentation.html"> Documentation</a>
+    <nav class="navbar" style="position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+        <div class="name"><a href="index.html">🌟 Saossane TARASSE</a></div>
+        <div class="nav-links">
+            <div class="nav_text"><a href="index.html">🏠 Accueil</a></div>
+            <div class="dropdown">
+    <div class="nav_text dropdown-parent">
+        <a href="#">📄 Documentation ▾</a>
+                    <ul>
+                        <li><a href="compétence.html">✅ Compétences</a></li>
+                        <li><a href="page2_projet_entrep.html">🏢 Projet Entreprise</a></li>
+                        <li><a href="page2_projet_ecole.html">🎓 Projet École</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav_text"><a href="veille_technologique.html">🧠 Veille Tech</a></div>
+            <div class="nav_text"><a href="contact.html">📬 Contact</a></div>
+        </div>
+    </nav>
+
+    </nav>
+
+    <main>
+        <img src="./docs/culture g bts.jpg" class="image1" alt="Image d'introduction">
+
+        <section class="title-section">
+            <div class="title">À propos de moi
+                <div class="hr1"></div>
+            </div>
+        </section>
+
+        <div class="intro1">
+            <p>Je suis étudiante à l'EPSI Montpellier (34) en Socle numérique, option BTS SIO (Services Informatiques aux Organisations), spécialité SISR (Solutions d'Infrastructure, Systèmes et Réseaux).<br><br>
+            J'ai découvert l'informatique en 1ère au lycée. J'ai tout de suite apprécié l'architecture réseau.<br>
+            Durant mes 2 années de BTS SIO SISR, j'ai pu acquérir de nouvelles compétences, notamment en cybersécurité et en investigation numérique, un domaine qui combine curiosité, technique et rigueur.</p>
+        </div>
+
+        <section class="title-section">
+            <div class="title">Mon Parcours
+                <div class="hr1"></div>
+            </div>
+        </section>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>🎓 2023 - en cours</h3>
+                    <h4>BTS SIO - Option SISR</h4>
+                    <p>EPSI Montpellier</p>
+                    <p class="timeline-description">Spécialisation en infrastructure, systèmes et réseaux</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>📚 2021 - 2023</h3>
+                    <h4>Baccalauréat</h4>
+                    <p>Lycée [Nom du lycée]</p>
+                    <p class="timeline-description">Premiers projets liés à l'informatique</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>📖 2017 - 2021</h3>
+                    <h4>Brevet des Collèges</h4>
+                    <p>Collège [Nom du collège]</p>
+                    <p class="timeline-description">Découverte du monde numérique</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="title-section">
+            <div class="title">BTS SIO en quelques mots
+                <div class="hr1"></div>
+            </div>
+        </section>
+
+        <div class="intro">
+            <p>Le BTS Services Informatiques aux Organisations forme des spécialistes en réseau (SISR) ou en développement (SLAM). Il permet une insertion professionnelle rapide ou une poursuite d'études.</p>
+        </div>
+
+        <div class="spe_bts">
+            <div class="sisr">
+                <p class="option">Option SISR</p>
+                <img src="./docs/image_sisr.png" class="image" alt="Image SISR">
+                <p>Le SISR s'adresse aux futurs administrateurs réseau, techniciens ou responsables d'infrastructure. Les étudiants y apprennent à installer, gérer, sécuriser et maintenir des équipements informatiques.</p>
+                <p>Débouchés :</p>
                 <ul>
-                    <li><a href="compétence.html">Tableau de compétence</a></li>
-                    <li><a href="page2_projet_entrep.html">Projet Entreprise </a></li>
-                    <li><a href="page2_projet_ecole.html">Projet Ecole</a></li>
+                    <li>Administrateur systèmes et réseaux</li>
+                    <li>Technicien d'infrastructure</li>
+                    <li>Pilote d'exploitation</li>
                 </ul>
             </div>
-            
+
+            <div class="sisr">
+                <p class="option">Option SLAM</p>
+                <img src="./docs/image_slam.jpeg" class="image" alt="Image SLAM">
+                <p>Le SLAM s'adresse aux passionnés de développement. Il forme à la conception, la réalisation et la maintenance de logiciels, d'applications web ou mobiles.</p>
+                <p>Débouchés :</p>
+                <ul>
+                    <li>Développeur web / mobile</li>
+                    <li>Analyste programmeur</li>
+                    <li>Responsable applicatif</li>
+                </ul>
+            </div>
         </div>
-        
-        <div class="nav_text"><a href="veille_technologique.html">Veille technologique</a>
-    </div>
-</div>
-<br>
-    
-<img src="./docs/culture g bts.jpg" class="image1" alt="">
-<br><br><br>
 
-<section class="title-section">
-    <div class="title">A Propos de moi
-        <div class="hr1">
-        </div>
-</div>
-</section>
-<div class="intro1">
-    <p>Je suis étudiante à l'EPSI Montpellier (34) en Socle numérique, option BTS SIO (Services Informatiques aux Organisations), spécialité SISR (Solutions d'Infrastructure, Systèmes et Réseaux).<br><br>
-        J’ai découvert l'informatique en 1er au lycée. J'ai tout de suite apprécié l'architecture réseau.<br>
-    Durant mes 2 années de Socle numérique, option BTS SIO SISR, j'ai pu apprendre de nouvelles compétences, qui ont poussé mes projets vers le domaine de la cybersécurité et plus précisément l'investigation numérique qui est un domaine que j'affectionne tout particulièrement car il mélange curiosité, technique et organisation.</p>
-</div>
+        <section class="title-section">
+            <div class="title">Compétences
+                <hr>
+            </div>
+        </section>
 
-<br><br><br><br><br>
-
-    <section class="title-section">
-        <div class="title">BTS SIO en quelques mots
-    <div class="hr1">
-    </div>
-</div>
-
-</section>
-    <div class="intro">
-        <p>Le Brevet de Technicien Supérieur aux Services Informatiques aux Organisations, s'adresse à ceux qui souhaitent se former en deux ans aux métiers d'administrateur réseau ou de développeur.<br>
-        Pour par la suite intégrer directement le marché du travail ou continuer des études, dans le domaine de l'informatique.</p>
-    </div>
-
-    <div class="spe_bts">
-    <div class="sisr">
-        <p class="option">Option SISR</p><br>
-        <img src="./docs/image_sisr.png" class="image" alt=""><br>
-
-        <p>L’option Solution d’infrastructure, systèmes et réseaux est destinée aux étudiants qui s’orientent vers les métiers liés à la conception et la maintenance d’infrastructures réseaux. 
-            Assurer la sécurité, la maintenance et l’installation des réseaux et des équipements informatiques. <br>
-            Il forme des professionnels des réseaux et équipements informatiques. En sortant d’un BTS SIO SISR, vous serez capables de gérer et d’administrer le réseau d’une société et d’assurer sa sécurité et sa maintenance.</p>
-            <p>Voici quelques débouchés avec un BTS SIO SISR:</p>
-            <ul>
-                <li>Administrateur systèmes réseaux</li>
-                <li>Pilote d'exploitation</li>
-                <li>Technicien d'infrastructure</li>
-                <li>Technicien de production</li>
-                <li>Technicien micro et réseaux</li>
-            </ul>
-        </p>
-        </div>
-    
-
-    <div class="sisr">
-        <p class="option">Option SLAM</p><br>
-        <img src="./docs/image_slam.jpeg" class="image" alt=""><br>
-
-        <p>L’option Solutions Logicielles et Applications Métier est destinée aux étudiants qui s’orientent vers les métiers liés à la conception et la maintenance de programmes applicatifs (front-end, back-end et full-stack), formant
-            des experts en logiciels.<br> En sortant d'un BTS SIO SLAM, vous serez capables de gérer un parc informatique ou d’administrer un réseau au sein d’une entreprise.</p>
-            <p>Voici quelques débouchés avec un BTS SIO SLAM:</p>
-            <ul>
-                <li>Développeur d'applications informatiques</li>
-                <li>Analyste programmeur</li>
-                <li>Responsable des services applicatifs</li>
-            </ul>
-</div>
-</div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<section class="title-section">
-    <div class="title">Compétences
-        <hr>
-        </div>
-</div>
-</section>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    <div class="title">Mon CV
-        <hr>
-</div>  
-<br><br><br>
-        <center>
-            <!-- <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100"></div> -->
-            <div class="col-lg-4 col-md-6 portfolio-item">
-                <div style="box-shadow:8px 8px 10px 0 rgba(0,0,0,0.5)" class="portfolio-wrap container-img">
-                  <img src="./docs/image_cv.png" class="img-fluid" alt="">
-                  <div class="portfolio-links">
-                    <a href="./docs/cv.pdf" target="_blank">
-                      <div class="pdf"> <h6>Ouvrir en PDF</h6></div> 
-                    </a>
-                  </div>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3>💻 Langages de Programmation</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <span class="skill-name">Python</span>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">HTML/CSS</span>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 60%"></div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-        <!-- <a href="./docs/cv.pdf" target="_blank"> <button>cv</button> </a> -->
-    </center>
-</div>
+            </div>
 
-<footer>
-    <div class="pieds"> 
-        <br><br><br>
-        © Saossane Tarasse <br>
-        2025
-    </div>
-</footer>
+            <div class="skills-category">
+                <h3>🔧 Administration Système</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <span class="skill-name">Windows Server</span>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Linux</span>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Active Directory</span>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>🌐 Réseaux</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <span class="skill-name">Configuration Switch/Router</span>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">VLAN</span>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Protocoles TCP/IP</span>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>🔒 Cybersécurité</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <span class="skill-name">Investigation Numérique</span>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Sécurité des Réseaux</span>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Analyse de Vulnérabilités</span>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>🛠️ Outils</h3>
+                <div class="skills-grid">
+                    <div class="skill-item">
+                        <span class="skill-name">Wireshark</span>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">VirtualBox</span>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span class="skill-name">Git</span>
+                        <div class="skill-level">
+                            <div class="skill-bar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="title-section">
+            <div class="title">Mon CV
+                <hr>
+            </div>
+        </section>
+
+        <div class="portfolio-item">
+            <div class="portfolio-wrap">
+                <img src="./docs/cv.png" alt="CV Saossane TARASSE">
+                <div class="portfolio-links">
+                    <a href="./docs/Saossane TARASSE CV Alternance.pdf" target="_blank">
+                        <div class="pdf"><h6>Ouvrir en PDF</h6></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="pieds"> 
+            <br><br><br>
+            © Saossane Tarasse<br>
+            2025
+        </div>
+    </footer>
 </body>
 </html>
-
