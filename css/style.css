@@ -1,4 +1,4 @@
-/* Palette de couleurs et polices */
+/* ===================== PALETTE DE COULEURS & POLICES ===================== */
 :root {
     --primary-color: #c15036;
     --secondary-color: #040b14;
@@ -10,19 +10,21 @@
     --font-title: 'Sour Gummy', sans-serif;
 }
 
-/* Reset */
+/* ============================== RESET ============================== */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* ============================== BASE ============================== */
 body {
-    background-color: rgb(229,225,241);
+    background-color: rgb(229, 225, 241);
     font-family: Arial, sans-serif;
     color: var(--text-color);
 }
 
+/* ============================== FOOTER ============================== */
 footer {
     display: block;
     height: 150px;
@@ -36,13 +38,15 @@ footer {
     margin-left: 100px;
 }
 
+/* ============================== TITRES & IMAGES ============================== */
 .image1 {
     width: 100%;
     display: block;
     margin: 0 auto;
 }
 
-.sous-titre, .title {
+.sous-titre,
+.title {
     text-align: center;
     font-family: var(--font-title);
     font-size: 50px;
@@ -56,6 +60,13 @@ footer {
     align-items: center;
 }
 
+.titles{
+    text-align: center;
+    font-size: 30px;
+    font-family: var(--font-title);
+}
+
+/* ============================== LIGNES ============================== */
 .hr1, hr {
     border: none;
     height: 1px;
@@ -71,6 +82,7 @@ hr {
     width: 100px;
 }
 
+/* ============================== LIENS ============================== */
 a {
     color: black;
     text-decoration: none;
@@ -79,10 +91,11 @@ a {
 }
 
 a:hover {
-    color: aliceblue;
+    color: rgba(6, 98, 178, 0.488);
 }
 
-.intro, .intro1 {
+/* ============================== INTRO ============================== */
+.intro{
     display: flex;
     align-items: center;
     text-align: center;
@@ -92,6 +105,18 @@ a:hover {
     height: auto;
 }
 
+.intro1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: justify;
+    font-size: 20px;
+    width: 65%;
+    margin: 20px;
+    height: auto;
+}
+
+/* ============================== BTS OPTIONS ============================== */
 .spe_bts {
     display: flex;
     margin-top: 5px;
@@ -106,7 +131,7 @@ li:hover {
     color: rgb(28, 67, 195);
 }
 
-.sisr, .slam {
+.sisr{
     padding: 20px;
     width: 450px;
     min-height: 700px;
@@ -120,6 +145,47 @@ li:hover {
     border-radius: 15px;
 }
 
+
+.fiche{
+    padding: 20px;
+    display: flex;
+    width: 450px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    /* background-color: blue; */
+    border-radius: 3%;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
+}
+
+.wrap_fiche > img{
+    display: flex;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    border-radius: 3%;
+    border-style: ridge;
+
+
+}
+
+.fiche-container{
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    max-width: 300%;
+}
+
+.fiche-container2{
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+    max-width: 300%;
+}
+
+
+/* ============================== IMAGE ============================== */
 .image {
     width: 280px;
     height: auto;
@@ -128,6 +194,7 @@ li:hover {
     margin: 0 auto;
 }
 
+/* ============================== NAVIGATION ============================== */
 .option {
     display: flex;
     justify-content: center;
@@ -177,6 +244,11 @@ li:hover {
     color: rgb(187, 185, 185);
 }
 
+/* ============================== MENU DÉROULANT ============================== */
+.dropdown {
+    position: relative;
+}
+
 .dropdown ul {
     position: absolute;
     top: 100%;
@@ -188,7 +260,7 @@ li:hover {
     border-radius: 10px;
     display: none;
     z-index: 1000;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .dropdown:hover ul {
@@ -210,6 +282,7 @@ li:hover {
     color: rgb(187, 185, 185);
 }
 
+/* ============================== BOUTON ============================== */
 button {
     border-radius: 20px;
     margin: auto 25px;
@@ -226,37 +299,7 @@ button:hover {
     background: var(--hover-color);
 }
 
-/* Responsive Navbar */
-@media screen and (max-width: 992px) {
-    .navbar {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .navbar {
-        width: 95%;
-        padding: 10px 20px;
-    }
-    .nav-links {
-        flex-direction: column;
-    }
-    .name {
-        font-size: 18px;
-    }
-    .dropdown ul {
-        position: static;
-        margin-top: 3px;
-        box-shadow: none;
-    }
-}
-
-/* Timeline */
+/* ============================== TIMELINE ============================== */
 .timeline {
     position: relative;
     max-width: 1200px;
@@ -288,8 +331,13 @@ button:hover {
     transform: translateY(-5px);
 }
 
-.timeline-item:nth-child(odd) { left: 0; }
-.timeline-item:nth-child(even) { left: 50%; }
+.timeline-item:nth-child(odd) {
+    left: 0;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+}
 
 .timeline-dot {
     position: absolute;
@@ -300,7 +348,7 @@ button:hover {
     top: 15px;
     border-radius: 50%;
     z-index: 1;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     transform: translateX(50%);
 }
 
@@ -317,7 +365,7 @@ button:hover {
     padding: 20px;
     background: linear-gradient(135deg, #ffffff, #f8f9fa);
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--border-color);
     transition: all 0.3s ease;
 }
@@ -352,14 +400,7 @@ button:hover {
     color: #666 !important;
 }
 
-@media screen and (max-width: 768px) {
-    .timeline::after { left: 31px; }
-    .timeline-item { width: 100%; padding-left: 70px; padding-right: 25px; left: 0; }
-    .timeline-dot { left: 18px; transform: translateX(-50%); }
-    .timeline-item:hover .timeline-dot { transform: translateX(-50%) scale(1.2); }
-}
-
-/* Contact Page */
+/* ============================== CONTACT ============================== */
 .contact-container {
     display: flex;
     justify-content: space-around;
@@ -370,12 +411,13 @@ button:hover {
     flex-wrap: wrap;
 }
 
-.contact-info, .contact-form {
+.contact-info,
+.contact-form {
     flex: 1;
     padding: 30px;
     background: linear-gradient(135deg, #ffffff, #f8f9fa);
     border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     border: 1px solid var(--border-color);
 }
 
@@ -468,21 +510,7 @@ button:hover {
     transform: translateY(-2px);
 }
 
-@media screen and (max-width: 768px) {
-    .contact-container {
-        flex-direction: column;
-        padding: 20px;
-    }
-    .contact-info,
-    .contact-form {
-        width: 100%;
-    }
-    .social-links {
-        justify-content: center;
-    }
-}
-
-/* Skills Section */
+/* ============================== COMPÉTENCES ============================== */
 .skills-container {
     max-width: 1200px;
     margin: 40px auto;
@@ -494,15 +522,15 @@ button:hover {
     background: linear-gradient(135deg, #ffffff, #f8f9fa);
     border-radius: 15px;
     padding: 25px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    border: 1px solid rgba(193, 80, 54, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--border-color);
 }
 
 .skills-category h3 {
-    color: #c15036;
+    color: var(--primary-color);
     font-size: 1.5em;
     margin-bottom: 20px;
-    font-family: 'Sour Gummy', sans-serif;
+    font-family: var(--font-title);
 }
 
 .skills-grid {
@@ -537,8 +565,69 @@ button:hover {
     transition: width 0.3s ease-in-out;
 }
 
-/* Responsive Skills */
+/* ============================== RÉSEAUX RESPONSIVE ============================== */
+@media screen and (max-width: 992px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
 @media screen and (max-width: 768px) {
+    .navbar {
+        width: 95%;
+        padding: 10px 20px;
+    }
+    .nav-links {
+        flex-direction: column;
+    }
+    .name {
+        font-size: 18px;
+    }
+    .dropdown ul {
+        position: static;
+        margin-top: 3px;
+        box-shadow: none;
+    }
+
+    .timeline::after {
+        left: 31px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+        left: 0;
+    }
+
+    .timeline-dot {
+        left: 18px;
+        transform: translateX(-50%);
+    }
+
+    .timeline-item:hover .timeline-dot {
+        transform: translateX(-50%) scale(1.2);
+    }
+
+    .contact-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
     .skills-container {
         padding: 10px;
     }
@@ -550,4 +639,77 @@ button:hover {
     .skills-grid {
         grid-template-columns: 1fr;
     }
+}
+
+
+/* Styles pour la section skills */
+/* document pdf */
+#skills {
+    background: linear-gradient(to top, #bdcdd0, #ffffff);
+    /* background: linear-gradient(to top, #bdcdd0, #ffffff); */
+    min-height: 300px;  /* Ajout d'une hauteur minimale pour que le fond soit visible */
+    padding: 30px 0;  /* Ajout de padding pour donner de l'espace au contenu */
+}
+.section-title h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Texte justifié avec alinéa */
+p {
+    text-align: justify;
+    }
+
+.pdf{
+    text-align: right;
+}
+
+/* Style personnalisé pour l'alinéa */
+.alinea-text {
+    font-weight: bold;
+}
+
+
+/* Style pour les titres des compétences */
+h3 {
+    color: #173b6c;
+}
+
+
+/* Style pour la liste de filtres */
+#portfolio-flters-1 {
+    background: linear-gradient(to top, #040b14, #3a3a3b);
+    list-style: none;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+/* Style pour la section des témoignages/langages */
+.testimonials {
+    height: 500px;
+}
+
+/* Style pour la mise en page générale */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.col-lg-4,
+.col-md-6 {
+    flex: 1 1 30%;
+    width: 60%;
+    padding: 10px;
+}
+
+.col-md-6 > img {
+
+}
+.col-lg-8 {
+    flex: 1 1 100%;
+    max-width: 100%;
+    padding: 10px;
 }
