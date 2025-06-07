@@ -27,6 +27,7 @@ body {
 
 p {
     text-align: justify;
+    line-height: 1.5;
     }
 
     /* ============================== FOOTER ============================== */
@@ -119,13 +120,13 @@ a:hover {
 
 .intro1 {
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
     align-items: center;
     text-align: justify;
     font-size: 20px;
     width: 65%;
-    margin: 20px;
     height: auto;
+    justify-content: flex-end;
 }
 
 .intro2 {
@@ -168,6 +169,11 @@ li:hover {
     border-radius: 15px;
 }
 
+.sisr:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
 .parcours{
     padding: 20px;
     width: 450px;
@@ -208,6 +214,119 @@ li:hover {
     max-width: 300%;
 }
 
+/* ============================== VEILLE ==============================*/
+
+.veille-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+    max-width: 200%;
+    column-gap: 20px;
+    row-gap: 40px;
+    padding: 20px;
+    margin-left: 25px;
+}
+
+.veille{
+    padding: 20px;
+    position: relative;
+    width: 450px;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+    border-radius: 10px;
+    border: 1px solid;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.3);
+    border-color: rgb(234, 73, 73);
+    background-color: white;
+}
+
+.veille:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(193, 80, 54, 0.15);
+    border-color: rgba(193, 80, 54, 0.3);}
+
+.image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.lire-article-link {
+  display: inline-flex;
+  align-items: center;
+  color: #2563eb; /* bleu */
+  text-decoration: none;
+  font-weight: 500;
+  gap: 6px;
+  transition: color 0.3s;
+}
+
+.lire-article-link:hover {
+  color: #1e40af; /* bleu plus foncé au hover */
+}
+
+.icon-link {
+  width: 1em;
+  height: 1em;
+  color: #9ca3af; /* gris doux */
+}
+
+@media (max-width: 768px) {
+  .veille-container {
+    grid-template-columns: 1fr;
+  }
+  .intro1, .intro2 {
+        padding: 0.5rem;
+        font-size: 0.95rem;
+    }
+}
+
+.tooltip-container {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  top: 30px;
+  right: 20px;
+}
+
+.question-mark {
+  font-size: 22px;
+  font-weight: bold;
+  color: #e74c3c;
+  background: white;
+  border-radius: 800%;
+  /* width: 40px;
+  height: 40px; */
+  border: 2px solid #e74c3c;
+  padding: 10px 15px;
+  text-align: center;
+  user-select: none;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  opacity: 0;
+  width: 220px;
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  border-radius: 8px;
+  padding: 10px;
+  position: absolute;
+  top: 110%; /* sous le point */
+  left: -110px;
+  transform: translateX(-50%);
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
 /* ============================== IMAGE ============================== */
 .image {
     width: 280px;
@@ -402,6 +521,7 @@ button {
 .timeline-content:hover {
     box-shadow: 0 6px 20px rgba(193, 80, 54, 0.15);
     border-color: rgba(193, 80, 54, 0.3);
+    transform: translateY(-5px);
 }
 
 .timeline-content h3 {
