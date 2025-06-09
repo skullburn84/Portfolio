@@ -163,7 +163,7 @@ li:hover {
     flex-direction: column;
     text-align: justify;
     border: 20px solid;
-    border-image-source: url('/docs/border.png');
+    /* border-image-source: url('/docs/border.png'); */
     border-image-slice: 10%;
     border-image-repeat: repeat;
     border-radius: 15px;
